@@ -4,7 +4,7 @@ This is a sample custom Class Mediator implementation which can be used to read 
 
 ## How it works.
 
-* We should provide the JNDI **name of the Datasource** and the **name of the Stored Procedure** to be executed as Class Mediator properties [1].
+* We should provide the JNDI **name of the Datasource** and the **name of the Stored Procedure** to be executed via Class Mediator properties [1].
 * Then this will read the external Datasource configurations using its JNDI name and execute the Stored Procedure based on the name which is provided as a Class Mediator property.
 * Finally, this will aggregate the multiple result sets into a single JSON object and build the JSON payload into Axis2 Message Context.
 
